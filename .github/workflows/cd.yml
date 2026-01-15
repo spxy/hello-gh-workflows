@@ -1,5 +1,6 @@
 on: push
 jobs:
   cd:
+    runs-on: ubuntu-latest
     steps:
       - run: echo hello from cd
