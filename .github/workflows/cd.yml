@@ -1,0 +1,5 @@
+on: push
+jobs:
+  cd:
+    steps:
+      - run: echo hello from cd
