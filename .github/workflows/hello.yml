@@ -3,6 +3,6 @@ jobs:
   hello-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hello
+      - run: echo hello from branch foo
       - run: pwd && ls -la
       - run: env
