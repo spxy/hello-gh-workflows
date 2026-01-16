@@ -5,8 +5,11 @@ on:
 jobs:
   hello-job:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
+      - run: git log
       - run: pwd && ls -la
       - run: date >> date.txt
       - run: git add date.txt
