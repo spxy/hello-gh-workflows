@@ -8,4 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: pwd && ls -la
-
+      - run: date >> date.txt
+      - run: git add date.txt
+      - run: git commit -m "Update date"
+      - run: git remote -v
+      - run: git push
